@@ -1,0 +1,154 @@
+.container__home {
+  background: url(../assets/fundo.png) repeat-x;
+}
+
+.content__bg {
+  margin: 0 auto;
+  max-width: 900px;
+  min-width: 300px;
+  height: 414px;
+  background: url(../assets/capa.png) no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+.content__bg img {
+  display: none;
+}
+
+.content__section, .content__section--quemSomos, .content__section--contatos {
+  max-width: 900px;
+  min-width: 300px;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+.content__section h1, .content__section--quemSomos h1, .content__section--contatos h1 {
+  padding: 19px 0;
+  font-weight: 600;
+  font-size: 2em;
+}
+.content__section p, .content__section--quemSomos p, .content__section--contatos p {
+  padding: 16px 0;
+  text-align: justify;
+  font-size: 1em;
+}
+
+.content__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  min-width: 300px;
+  height: 105px;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+
+.content__menu--links img {
+  width: 100%;
+}
+@media (max-width: 535px) {
+  .content__menu--links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.content__menu--links a {
+  text-decoration: none;
+  color: #383F5D;
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 5px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.content__menu--links a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+@media (max-width: 535px) {
+  .content__menu--links a {
+    font-size: 13px;
+    padding: 3px 2px;
+  }
+}
+.content__menu--links a.active {
+  opacity: 0.7;
+}
+
+.content__footer {
+  max-width: 900px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #EFEFEF;
+}
+
+.container {
+  background: url(../assets/fundo2.png) repeat-x;
+}
+
+.content__section--quemSomos h2, .content__section--contatos h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.content__section--quemSomos ol, .content__section--contatos ol {
+  padding-left: 50px;
+}
+.content__section--quemSomos li, .content__section--contatos li {
+  font-size: 15px;
+  margin-top: 3px;
+}
+.content__section--quemSomos hr, .content__section--contatos hr {
+  margin: 15px 0;
+}
+
+.content__section--contatos form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 7px;
+}
+.content__section--contatos label {
+  font-size: 20px;
+  font-weight: 500;
+}
+.content__section--contatos input, .content__section--contatos textarea {
+  line-height: 35px;
+  font-size: 18px;
+  border: 1px solid #6D78A8;
+  border-radius: 7px;
+}
+.content__section--contatos input:not(first-child), .content__section--contatos textarea:not(first-child) {
+  margin-bottom: 20px;
+}
+.content__section--contatos button {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #383F5D;
+  background: transparent;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.content__section--contatos button:hover {
+  background: #383F5D;
+  color: #fff;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
