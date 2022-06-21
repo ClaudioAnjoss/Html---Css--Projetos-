@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto:wght@100;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+input,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  background: url(../assets/fundo.png);
+}
+
+header,
+main,
+footer {
+  max-width: 900px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.content__bg {
+  max-width: 900px;
+  height: 388px;
+  background: url(../assets/capa.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.menu {
+  background: #C5C5B2;
+  min-height: 48px;
+  padding: 15px;
+  margin-top: 3px;
+}
+.menu nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+.menu nav ul li a {
+  padding: 3px 10px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #4b566a;
+  border-left: 1px solid #4b566a;
+}
+.menu nav ul li a:hover {
+  opacity: 0.7;
+}
+.menu nav ul a.active {
+  opacity: 0.7;
+}
+
+main {
+  background: #C5C5B2;
+}
+main h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 10px 0 30px 0;
+}
+main h2 {
+  margin-left: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 30px;
+}
+main h2 span {
+  transition-duration: 0.4s;
+}
+main p {
+  text-align: justify;
+  font-size: 1.6rem;
+  margin-top: 10px;
+  padding: 0 3%;
+}
+
+.content__campanhas {
+  width: 95%;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.content__campanhas img {
+  width: 100%;
+}
+.content__campanhas span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  font-size: 2rem;
+  font-weight: bold;
+  background: rgba(75, 86, 106, 0.3882352941);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.content__campanhas span:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 310px);
+  justify-content: center;
+}
+.formulario div {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+.formulario div input {
+  line-height: 3rem;
+  font-size: 1.6rem;
+  background: transparent;
+  border: 1px solid #4b566a;
+  border-radius: 10px;
+}
+.formulario div label {
+  font-size: 1.6rem;
+}
+.formulario div label span {
+  color: red;
+  font-weight: bold;
+}
+.formulario .mensagem {
+  padding: 1%;
+  margin-bottom: 30px;
+}
+.formulario .mensagem button {
+  line-height: 3rem;
+  font-size: 2rem;
+  background: #4b566a;
+  border-radius: 5px;
+  border: none;
+  padding: 1%;
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 500;
+  border: 1px solid #000;
+  transition-duration: 0.4s;
+}
+.formulario .mensagem button:hover {
+  background: #2e333b;
+  cursor: pointer;
+}
+.formulario textarea {
+  line-height: 3rem;
+  font-size: 2rem;
+  background: transparent;
+  border: 1px solid #4b566a;
+  border-radius: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  font-size: 1.6rem;
+  background: #E8E8D9;
+  margin-top: 20px;
+}
+
+@media (min-width: 620px) {
+  .mensagem {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+@media (max-width: 620px) {
+  .menu nav {
+    display: none;
+  }
+  .one,
+.two,
+.three {
+    background-color: #4b566a;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition-duration: 0.3s;
+  }
+  .menu__toggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 40px;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  .menu.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu.on nav {
+    display: block;
+  }
+  .menu.on .menu__toggle {
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
+  .menu.on .menu__toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+  .menu.on .menu__toggle .two {
+    opacity: 0;
+  }
+  .menu.on .menu__toggle .three {
+    transform: rotate(-45deg) translate(9px, -8px);
+  }
+  .menu.on nav ul {
+    display: block;
+    text-align: center;
+  }
+  .menu.on nav ul li a {
+    transition-duration: 0.5s;
+    font-size: 3rem;
+    line-height: 4rem;
+    display: block;
+    border: none;
+  }
+  .content__campanhas span {
+    position: relative;
+    opacity: 1;
+    background: rgba(75, 86, 106, 0.1098039216);
+    transition-duration: 0.5s;
+  }
+  h2 span {
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

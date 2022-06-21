@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Anna Bella</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="content__bg"></div>
+
+        <div class="menu">
+            <div class="menu__toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" style="border: none;">Página Inicial</a></li>
+                    <li><a href="campanhas.html">Campanhas Publicitárias</a></li>
+                    <li><a class="active" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Contato</h1>
+
+        <form class="formulario">
+            <div>
+                <label for="nome">Nome <span>*</span></label>
+                <input id="nome" type="text" required>
+            </div>
+
+            <div>
+                <label for="email">E-mail <span>*</span></label>
+                <input id="email" type="text" required>
+            </div>
+
+            <div>
+                <label for="telefone">Telefone <span>*</span></label>
+                <input id="telefone" type="text" required>
+            </div>
+
+            <div>
+                <label for="celular">Celular <span>*</span></label>
+                <input id="celular" type="text" required>
+            </div>
+            
+            <div>
+                <label for="evento">Tipo de evento</label>
+                <input id="evento" type="text" required>
+            </div>
+
+            <div>
+                <label for="data">Data do Evento</label>
+                <input id="data" type="text" required>
+            </div>
+
+            <div class="mensagem">
+                <label for="mensagem">Mensagem <span>*</span></label>
+                <textarea id="mensagem"></textarea>
+
+                <button type="submit">Entrar em contato</button>
+            </div>
+            
+        </form>
+
+    </main>
+
+    <footer>
+        <span>
+            Made with by Claudio Anjos 👋
+            <a href="https://github.com/ClaudioAnjoss" target="_blank">Visite meu
+                Linkedin!</a>
+        </span>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
