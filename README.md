@@ -20,6 +20,13 @@
 
 ##
 
+<p align="center">
+  <strong> Modelo - Anna Bella </strong> <br>
+   <img width="400" alt="GitHub" src="https://media1.tenor.com/images/6089b9ae0c4f42c34240d3b6f8b86d38/tenor.gif?itemid=26012180">
+</p>
+
+##
+
 <strong>DESAFIOS</strong>
 
 <p>
