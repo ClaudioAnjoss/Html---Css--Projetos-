@@ -19,11 +19,44 @@ body {
   background: #E6E6E6;
 }
 
-header, main, footer {
+header,
+main,
+footer {
   min-width: 320px;
   overflow: hidden;
 }
 
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 .menu {
   min-height: 136px;
   background: #F7B600;
@@ -54,7 +87,7 @@ header, main, footer {
   color: #fff;
   padding: 8px 12px;
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 400;
   border-radius: 10px;
   transition-duration: 0.4s;
   margin-left: 10px;
@@ -68,90 +101,241 @@ header, main, footer {
   background: #fff;
 }
 
-main {
+.home {
   max-width: 950px;
   margin: 15px auto;
-}
-main .content__main {
   display: grid;
 }
-main .content__main .content__article {
+.home .content__article {
   display: flex;
   flex-direction: column;
 }
-main .content__main .content__article .article {
+.home .content__article .article {
   margin-top: 20px;
   background: #fff;
   padding: 2%;
   border-radius: 5px;
 }
-main .content__main .content__article .article h1 {
+.home .content__article .article h1 {
   font-size: 2.4rem;
+  font-weight: 500;
   color: #F7B600;
 }
-main .content__main .content__article .article h2 {
+.home .content__article .article h2 {
   font-size: 1.2rem;
+  font-weight: 300;
   margin-bottom: 20px;
 }
-main .content__main .content__article .article img {
+.home .content__article .article img {
   width: 100%;
 }
-main .content__main .content__article .article p {
+.home .content__article .article p {
   text-align: justify;
   font-size: 1.6rem;
   margin-top: 10px;
   margin-bottom: 10px;
   transition-duration: 0.4s;
 }
-main .content__main .content__article .article a {
+.home .content__article .article a {
   font-size: 1.6rem;
   color: #F7B600;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 500;
 }
-main .content__main .content__article .article a:hover {
+.home .content__article .article a:hover {
   text-decoration: underline;
 }
-main .content__main .content__right {
+.home .content__right {
   display: flex;
   flex-direction: column;
 }
-main .content__main .content__right .content__postagemRecente, main .content__main .content__right .content__categorias {
+.home .content__right .content__postagemRecente, .home .content__right .content__categorias {
   padding: 4%;
   background: #fff;
   margin-top: 20px;
   border-radius: 5px;
 }
-main .content__main .content__right .content__postagemRecente h1, main .content__main .content__right .content__categorias h1 {
+.home .content__right .content__postagemRecente h1, .home .content__right .content__categorias h1 {
   font-size: 1.8rem;
   font-weight: bold;
   color: #444444;
   background: #E6E6E6;
   padding: 5px;
 }
-main .content__main .content__right .content__postagemRecente .postagem, main .content__main .content__right .content__categorias .postagem {
+.home .content__right .content__postagemRecente .postagem, .home .content__right .content__categorias .postagem {
   font-size: 1.3rem;
   padding: 5px;
   border-bottom: 1px dotted #E6E6E6;
 }
-main .content__main .content__right .content__postagemRecente .postagem a, main .content__main .content__right .content__categorias .postagem a {
+.home .content__right .content__postagemRecente .postagem a, .home .content__right .content__categorias .postagem a {
   color: #F7B600;
   text-decoration: none;
 }
-main .content__main .content__right .content__postagemRecente .postagem a:hover, main .content__main .content__right .content__categorias .postagem a:hover {
+.home .content__right .content__postagemRecente .postagem a:hover, .home .content__right .content__categorias .postagem a:hover {
   text-decoration: underline;
 }
-main .content__main .content__right .content__categorias ul {
+.home .content__right .content__categorias ul {
   list-style: none;
   margin-top: 10px;
 }
-main .content__main .content__right .content__categorias ul li a {
+.home .content__right .content__categorias ul li a {
   font-size: 1.6rem;
   color: #F7B600;
   padding: 5px;
   text-decoration: none;
 }
-main .content__main .content__right .content__categorias ul li a:hover {
+.home .content__right .content__categorias ul li a:hover {
+  text-decoration: underline;
+}
+
+.jogos {
+  max-width: 950px;
+  margin: 15px auto;
+}
+.jogos .content__article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.jogos .content__article .article {
+  margin-top: 20px;
+  margin-left: 20px;
+  background: #fff;
+  padding: 2%;
+  border-radius: 5px;
+}
+.jogos .content__article .article h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #F7B600;
+}
+.jogos .content__article .article h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.jogos .content__article .article img {
+  width: 100%;
+}
+.jogos .content__article .article p {
+  text-align: justify;
+  font-size: 1.6rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition-duration: 0.4s;
+}
+.jogos .content__article .article a {
+  font-size: 1.6rem;
+  color: #F7B600;
+  text-decoration: none;
+  font-weight: 500;
+}
+.jogos .content__article .article a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 940px) {
+  .jogos .content__article {
+    grid-template-columns: 1fr;
+  }
+}
+
+.celulares {
+  max-width: 950px;
+  margin: 15px auto;
+}
+.celulares .content__article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.celulares .content__article .article {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 20px;
+  background: #fff;
+  padding: 2%;
+  border-radius: 5px;
+}
+.celulares .content__article .article h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #F7B600;
+}
+.celulares .content__article .article h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.celulares .content__article .article img {
+  width: 100%;
+}
+.celulares .content__article .article p {
+  text-align: justify;
+  font-size: 1.6rem;
+  margin: auto;
+  transition-duration: 0.4s;
+}
+.celulares .content__article .article a {
+  font-size: 1.6rem;
+  color: #F7B600;
+  text-decoration: none;
+  font-weight: 500;
+}
+.celulares .content__article .article a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 940px) {
+  .celulares .content__article {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .celulares .content__article {
+    grid-template-columns: 1fr;
+  }
+}
+
+.eletronicos {
+  max-width: 950px;
+  margin: 15px auto;
+}
+.eletronicos .content__article {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.eletronicos .content__article .article {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+  background: #fff;
+  padding: 2%;
+  border-radius: 5px;
+}
+.eletronicos .content__article .article h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #F7B600;
+}
+.eletronicos .content__article .article h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.eletronicos .content__article .article img {
+  width: 100%;
+}
+.eletronicos .content__article .article p {
+  text-align: justify;
+  font-size: 1.6rem;
+  margin: 1% 0;
+  transition-duration: 0.4s;
+}
+.eletronicos .content__article .article a {
+  font-size: 1.6rem;
+  color: #F7B600;
+  text-decoration: none;
+  font-weight: 500;
+}
+.eletronicos .content__article .article a:hover {
   text-decoration: underline;
 }
 
@@ -165,28 +349,33 @@ footer {
 }
 
 @media (min-width: 960px) {
-  .content__main {
+  .home {
     grid-template-columns: 70% 30%;
   }
-  .content__postagemRecente, main .content__main .content__right .content__categorias {
+  .content__postagemRecente, .home .content__right .content__categorias {
     margin-left: 15px;
   }
 }
 @media (max-width: 960px) {
-  main {
+  .home {
     padding: 2%;
   }
-  .content__postagemRecente, main .content__main .content__right .content__categorias {
+  .content__postagemRecente, .home .content__right .content__categorias {
     margin-left: 0;
+  }
+  .jogos .content__article .article, .celulares .content__article .article {
+    margin: 1%;
   }
 }
 @media (max-width: 430px) {
   .menu nav ul li a {
     margin-left: 0;
   }
-  main .content__main .content__article .article p, main .content__main .content__article .article a {
+  main .content__main .content__article .article p,
+main .content__main .content__article .article a {
     font-size: 1.2rem;
   }
+  footer {
+    font-size: 1.3rem;
+  }
 }
-
-/*# sourceMappingURL=main.css.map */
