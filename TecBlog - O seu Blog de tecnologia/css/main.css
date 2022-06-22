@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+input,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #E6E6E6;
+}
+
+header, main, footer {
+  min-width: 320px;
+  overflow: hidden;
+}
+
+.menu {
+  min-height: 136px;
+  background: #F7B600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu .menu__logo {
+  font-size: 4rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.menu .menu__logo .logo__tec {
+  color: #444444;
+}
+.menu .menu__logo .logo__blog {
+  color: #fff;
+}
+.menu nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 20px;
+}
+.menu nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  margin-left: 10px;
+}
+.menu nav ul li a:hover {
+  color: #F7B600;
+  background: #fff;
+}
+.menu nav ul li a.active {
+  color: #F7B600;
+  background: #fff;
+}
+
+main {
+  max-width: 950px;
+  margin: 15px auto;
+}
+main .content__main {
+  display: grid;
+}
+main .content__main .content__article {
+  display: flex;
+  flex-direction: column;
+}
+main .content__main .content__article .article {
+  margin-top: 20px;
+  background: #fff;
+  padding: 2%;
+  border-radius: 5px;
+}
+main .content__main .content__article .article h1 {
+  font-size: 2.4rem;
+  color: #F7B600;
+}
+main .content__main .content__article .article h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+main .content__main .content__article .article img {
+  width: 100%;
+}
+main .content__main .content__article .article p {
+  text-align: justify;
+  font-size: 1.6rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition-duration: 0.4s;
+}
+main .content__main .content__article .article a {
+  font-size: 1.6rem;
+  color: #F7B600;
+  text-decoration: none;
+  font-weight: 700;
+}
+main .content__main .content__article .article a:hover {
+  text-decoration: underline;
+}
+main .content__main .content__right {
+  display: flex;
+  flex-direction: column;
+}
+main .content__main .content__right .content__postagemRecente, main .content__main .content__right .content__categorias {
+  padding: 4%;
+  background: #fff;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+main .content__main .content__right .content__postagemRecente h1, main .content__main .content__right .content__categorias h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #444444;
+  background: #E6E6E6;
+  padding: 5px;
+}
+main .content__main .content__right .content__postagemRecente .postagem, main .content__main .content__right .content__categorias .postagem {
+  font-size: 1.3rem;
+  padding: 5px;
+  border-bottom: 1px dotted #E6E6E6;
+}
+main .content__main .content__right .content__postagemRecente .postagem a, main .content__main .content__right .content__categorias .postagem a {
+  color: #F7B600;
+  text-decoration: none;
+}
+main .content__main .content__right .content__postagemRecente .postagem a:hover, main .content__main .content__right .content__categorias .postagem a:hover {
+  text-decoration: underline;
+}
+main .content__main .content__right .content__categorias ul {
+  list-style: none;
+  margin-top: 10px;
+}
+main .content__main .content__right .content__categorias ul li a {
+  font-size: 1.6rem;
+  color: #F7B600;
+  padding: 5px;
+  text-decoration: none;
+}
+main .content__main .content__right .content__categorias ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+@media (min-width: 960px) {
+  .content__main {
+    grid-template-columns: 70% 30%;
+  }
+  .content__postagemRecente, main .content__main .content__right .content__categorias {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 960px) {
+  main {
+    padding: 2%;
+  }
+  .content__postagemRecente, main .content__main .content__right .content__categorias {
+    margin-left: 0;
+  }
+}
+@media (max-width: 430px) {
+  .menu nav ul li a {
+    margin-left: 0;
+  }
+  main .content__main .content__article .article p, main .content__main .content__article .article a {
+    font-size: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
