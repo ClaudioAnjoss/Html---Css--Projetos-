@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+input,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header,
+main,
+footer {
+  max-width: 950px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+body {
+  background: url(../assets/fundo.png) repeat-x top;
+}
+
+.menu {
+  height: 233px;
+  background: url(../assets/detalhe-topo.png) no-repeat right top;
+  position: relative;
+}
+.menu img {
+  margin-top: 20px;
+}
+.menu nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.253);
+  border-radius: 30px;
+  overflow: hidden;
+}
+.menu nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 30px;
+  display: block;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition-duration: 0.4s;
+}
+.menu nav ul li a:hover {
+  color: #294C71;
+  transform: translateX(5px);
+}
+.menu nav ul li a.active {
+  background: #fff;
+  color: #294C71;
+}
+.menu .menu__toggle {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  padding: 5px;
+  width: 50px;
+  height: 47px;
+  margin-right: 40px;
+  margin-left: auto;
+  cursor: pointer;
+}
+.menu .menu__toggle .one,
+.menu .menu__toggle .two,
+.menu .menu__toggle .three {
+  background-color: #fff;
+  border-radius: 4px;
+  height: 5px;
+  width: 100%;
+  margin: 6px auto;
+  transition-duration: 0.3s;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "sidenav content";
+}
+main section {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main section .article {
+  background: url(../assets/fundo-caixa.png);
+  margin: 2% 1%;
+  padding: 1%;
+}
+main section .article .content {
+  background: #fff;
+  padding: 1%;
+}
+main section .article h2 {
+  background: #294C71;
+  color: #fff;
+  padding: 5px;
+  font-size: 1.8rem;
+}
+main section .article h1 {
+  background: #B10333;
+  display: block;
+  width: max-content;
+  padding: 3px;
+  margin: 0 0 2%;
+}
+main section .article img {
+  width: 100%;
+  border-radius: 7px;
+}
+main section .article p, main section .article a {
+  font-size: 1.6rem;
+  margin: 1% 0;
+}
+main section .article a {
+  text-decoration: none;
+  color: #B10333;
+  font-weight: 500;
+}
+main aside {
+  grid-area: sidenav;
+  background: url(../assets/fundo-caixa.png);
+  padding: 1%;
+  height: max-content;
+  position: relative;
+}
+
+@media (max-width: 620px) {
+  .menu {
+    background: none;
+  }
+  .menu.menu.active {
+    background: #294C71;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: max-content;
+    margin: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu nav ul {
+    display: none;
+  }
+  .menu img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .menu.menu.active nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    margin-top: 120px;
+  }
+  .menu.menu.active nav ul li a {
+    border-radius: 1px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 40px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    transition-duration: 0.4s;
+  }
+  .menu.menu.active nav ul li a:hover {
+    transform: none;
+  }
+  .menu .menu__toggle {
+    display: block;
+    transition-duration: 0.5s;
+  }
+  .menu.active .menu__toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+  .menu.active .menu__toggle .two {
+    opacity: 0;
+  }
+  .menu.active .menu__toggle .three {
+    transform: rotate(-45deg) translate(9px, -8px);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
