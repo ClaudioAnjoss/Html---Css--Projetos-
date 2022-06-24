@@ -15,15 +15,14 @@
 
  <p align="center">
   <strong> Site de Notícias Cidades </strong> <br>
-  (Gif de apresentaçao em breve)
-   <!-- <img width="400" alt="GitHub" src="https://media-exp1.licdn.com/dms/image/C4D22AQGoMMlly-53qw/feedshare-shrink_800/0/1655916710246?e=1658966400&v=beta&t=aaZDyZwWLv8XtZoFsX4LW_J8wfnqa4v3RNy6fdadKxg"> -->
+   <img width="400" alt="GitHub" src="https://media4.giphy.com/media/BN25Gbugca3Vn9Sbib/giphy.gif?cid=790b76113024d97d96f48c8f338034452da75c644e075115&rid=giphy.gif&ct=g">
 </p>
 
 ##
 
  <p align="center">
   <strong> TecBlog - O seu ‘blog’ de tecnologia. </strong> <br>
-   <img width="400" alt="GitHub" src="https://media-exp1.licdn.com/dms/image/C4D22AQGoMMlly-53qw/feedshare-shrink_800/0/1655916710246?e=1658966400&v=beta&t=aaZDyZwWLv8XtZoFsX4LW_J8wfnqa4v3RNy6fdadKxg">
+   <img width="400" alt="GitHub" src="https://media0.giphy.com/media/dKB3h7cUYeEYA2tSwP/giphy.gif?cid=790b76116183dadcee8316352dec06f0738516e6488392c8&rid=giphy.gif&ct=g">
 </p>
 
 ##
