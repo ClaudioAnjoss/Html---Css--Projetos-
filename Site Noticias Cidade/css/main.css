@@ -15,8 +15,7 @@ html {
 }
 
 header,
-main,
-footer {
+main {
   max-width: 950px;
   min-width: 320px;
   margin: 0 auto;
@@ -94,49 +93,280 @@ main section {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-main section .article {
+main section .article, main section .entrevista,
+main section .mundo {
   background: url(../assets/fundo-caixa.png);
   margin: 2% 1%;
   padding: 1%;
 }
-main section .article .content {
+main section .article .content, main section .entrevista .content,
+main section .mundo .content {
   background: #fff;
   padding: 1%;
 }
-main section .article h2 {
+main section .article h2, main section .entrevista h2,
+main section .mundo h2 {
   background: #294C71;
   color: #fff;
   padding: 5px;
   font-size: 1.8rem;
+  font-weight: 500;
 }
-main section .article h1 {
+main section .article h1, main section .entrevista h1,
+main section .mundo h1 {
   background: #B10333;
-  display: block;
-  width: max-content;
-  padding: 3px;
-  margin: 0 0 2%;
+  color: #fff;
+  font-weight: 300;
+  display: inline-block;
+  padding: 3px 8px;
+  margin-bottom: 2%;
 }
-main section .article img {
+main section .article img, main section .entrevista img,
+main section .mundo img {
   width: 100%;
   border-radius: 7px;
 }
-main section .article p, main section .article a {
+main section .article p, main section .entrevista p,
+main section .mundo p,
+main section .article a,
+main section .entrevista a,
+main section .mundo a {
   font-size: 1.6rem;
   margin: 1% 0;
 }
-main section .article a {
+main section .article a, main section .entrevista a,
+main section .mundo a {
   text-decoration: none;
   color: #B10333;
   font-weight: 500;
 }
+main section .entrevista,
+main section .mundo {
+  display: flex;
+  flex-direction: column;
+}
+main section .entrevista .content,
+main section .mundo .content {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 0 0 0 8px;
+  transition-duration: 0.4s;
+  margin-top: 4px;
+}
+main section .entrevista .content img,
+main section .mundo .content img {
+  width: 100px;
+}
+main section .entrevista .content p,
+main section .mundo .content p {
+  padding: 2%;
+}
+main section .entrevista .content a,
+main section .mundo .content a {
+  color: #294C71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  font-size: 2.8rem;
+  border-radius: 0 5px 5px 0;
+  transition: 0.3s;
+}
+main section .entrevista .content:hover,
+main section .mundo .content:hover {
+  border: 1px solid #294C71;
+}
+main section .entrevista .content:hover a,
+main section .mundo .content:hover a {
+  background: #294C71;
+  color: #fff;
+}
 main aside {
   grid-area: sidenav;
   background: url(../assets/fundo-caixa.png);
-  padding: 1%;
+  margin: 3% 8px 0 0;
+  padding: 1.5% 2%;
   height: max-content;
   position: relative;
+  width: 250px;
+}
+main aside .sidebar {
+  background: #294C71;
+  padding: 3%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+main aside .sidebar .form__notices {
+  position: relative;
+}
+main aside .sidebar .form__notices input {
+  height: 36px;
+  width: 100%;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.466);
+  position: relative;
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 0 30px;
+  margin-bottom: 10%;
+}
+main aside .sidebar .form__notices input::placeholder {
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+}
+main aside .sidebar .form__notices span.search {
+  color: #fff;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 35px;
+  border-radius: 0 5px 5px 0;
+  transition-duration: 0.5s;
+}
+main aside .sidebar .form__notices span.search:hover {
+  background-color: #fff;
+  color: #294C71;
+}
+main aside .sidebar .form__notices span.tab {
+  color: rgba(255, 255, 255, 0.493);
+  font-size: 2.6rem;
+  position: absolute;
+  top: 3%;
+  left: 4%;
+}
+main aside .sidebar ul {
+  list-style: none;
+}
+main aside .sidebar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 5%;
+  display: block;
+  transition-duration: 0.4s;
+  border-radius: 5px;
+}
+main aside .sidebar ul li a.active {
+  background: #fff;
+  color: #294C71;
+  font-weight: 500;
+}
+main aside .sidebar ul li a:hover {
+  transform: translateX(5px);
+  opacity: 0.7;
+}
+main aside .sidebar.email {
+  height: max-content;
+  margin-top: 2%;
+  background: #fff;
+  padding: 0;
+}
+main aside .sidebar.email .form__notices {
+  text-decoration: none;
+  color: #294C71;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 5%;
+  display: block;
+  transition-duration: 0.4s;
+  border-radius: 5px;
+}
+main aside .sidebar.email .form__notices input {
+  margin-bottom: 0;
+  border: 1px solid #294C71;
+  padding: 0 30px 0 4px;
+  color: #294C71;
+  text-align: start;
+}
+main aside .sidebar.email .form__notices input::placeholder {
+  color: rgba(41, 76, 113, 0.5058823529);
+  font-size: 1.8rem;
+  text-align: center;
+}
+main aside .sidebar.email .form__notices span.notice {
+  color: #294C71;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 38%;
+  right: 5%;
+  border: 1px solid #294C71;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 35px;
+  border-radius: 0 5px 5px 0;
+  transition-duration: 0.5s;
+}
+main aside .sidebar.email .form__notices span.notice:hover {
+  background-color: #294C71;
+  color: #fff;
+}
+main aside .sidebar.email ul {
+  list-style: none;
+  min-width: 230px;
+}
+main aside .sidebar.email ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 300;
+  padding: 5%;
+  display: block;
+  transition-duration: 0.4s;
+  border-radius: 5px;
+}
+main aside .sidebar.email ul li a.active {
+  background: #fff;
+  color: #294C71;
+  font-weight: 500;
+}
+main aside .sidebar.email ul li a:hover {
+  transform: translateX(5px);
+  opacity: 0.7;
 }
 
+footer {
+  background: #294C71;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  padding: 1%;
+}
+footer a {
+  color: #fff;
+}
+
+@media (max-width: 970px) {
+  aside {
+    display: none;
+  }
+}
+@media (max-width: 673px) {
+  main section {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 @media (max-width: 620px) {
   .menu {
     background: none;
@@ -161,7 +391,7 @@ main aside {
   .menu img {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 16px;
   }
   .menu.menu.active nav ul {
     display: flex;
