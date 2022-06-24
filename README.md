@@ -14,6 +14,14 @@
  <strong>DEMONSTRAÇÃO</strong>
 
  <p align="center">
+  <strong> Site de Notícias Cidades </strong> <br>
+  (Gif de apresentaçao em breve)
+   <!-- <img width="400" alt="GitHub" src="https://media-exp1.licdn.com/dms/image/C4D22AQGoMMlly-53qw/feedshare-shrink_800/0/1655916710246?e=1658966400&v=beta&t=aaZDyZwWLv8XtZoFsX4LW_J8wfnqa4v3RNy6fdadKxg"> -->
+</p>
+
+##
+
+ <p align="center">
   <strong> TecBlog - O seu ‘blog’ de tecnologia. </strong> <br>
    <img width="400" alt="GitHub" src="https://media-exp1.licdn.com/dms/image/C4D22AQGoMMlly-53qw/feedshare-shrink_800/0/1655916710246?e=1658966400&v=beta&t=aaZDyZwWLv8XtZoFsX4LW_J8wfnqa4v3RNy6fdadKxg">
 </p>
