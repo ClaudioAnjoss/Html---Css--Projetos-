@@ -27,6 +27,13 @@
 
 ##
 
+ <p align="center">
+  <strong> Parallax - Single Page </strong> <br>
+   <img width="400" alt="GitHub" src="https://media4.giphy.com/media/5WhXZfTOSW7xwDATrW/giphy.gif?cid=790b7611734afe4380bad909c433632dac58e456b96d890e&rid=giphy.gif&ct=g">
+</p>
+
+##
+
 <p align="center">
   <strong> UNES - Faculdade Ficticia </strong> <br>
    <img width="400" alt="GitHub" src="https://media1.tenor.com/images/fc90bcfdcffe1d12af57c92ae6184e41/tenor.gif?itemid=26001241">

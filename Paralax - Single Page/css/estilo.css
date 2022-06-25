@@ -1,0 +1,83 @@
+body, html {
+    margin: 0;
+    font: 16px "Lato", sans-serif;
+    color: #777;
+    height: 100%;
+}
+.conteudo {
+    color: #777;
+    background-color: white;
+    text-align: justify;
+    padding: 50px 80px;
+}
+h2 {
+    text-transform: uppercase;
+    color: #111;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+p {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.conteudo a {
+    color: #777;
+    transition-duration: 0.4s;
+}
+
+.conteudo a:hover {
+    color: darkorange;
+}
+
+/*Efeito Parallax*/
+.caixa1 , .caixa2 , .caixa3 , .caixa4 {
+    position: relative;
+    height: 100%;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.caixa1 {
+    background-image: url(../assets/imagem1.jpg);
+    position: relative;
+}
+.caixa2 {
+    background-image: url(../assets/imagem2.jpg);
+    position: relative;
+}
+.caixa3 {
+    background-image: url(../assets/imagem3.jpg);
+    position: relative;
+}
+.caixa4 {
+    background-image: url(../assets/imagem4.jpg);
+    position: relative;
+}
+
+.caixa1 img , .caixa2 img , .caixa3 img , .caixa4 img {
+    position: absolute;
+    bottom: 0;
+    right: 42%;
+} 
+.caixa-titulo {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+.caixa-titulo span.titulo {
+    color: #fff;
+    background: #111;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
